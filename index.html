@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderGo Travels</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2>WanderGo Travels</h2>
+            <button id="themeButton">Dark Mode</button>
+        </nav>
+
+        <div class="hero">
+            <h1>Explore The World</h1>
+            <p>Find your next favourite destination with WanderGo.</p>
+            <a href="#packages">Explore Packages</a>
+        </div>
+    </header>
+
+    <div class="offer">
+        <h3>Special Offer</h3>
+        <p id="offerText">Loading offer...</p>
+    </div>
+
+    <main>
+        <section class="welcome">
+            <h2>Where Would You Like To Go?</h2>
+
+            <label>Your Name:</label>
+            <input type="text" id="visitorName" placeholder="Enter your name">
+        </section>
+
+        <section id="packages">
+            <h2>Popular Tour Packages</h2>
+
+            <label>Select Destination:</label>
+            <select id="destinationSelect">
+                <option value="all">All Destinations</option>
+            </select>
+
+            <button id="clearPreference">Clear Preference</button>
+
+            <p id="loading">Loading packages...</p>
+            <p id="error"></p>
+
+            <div id="packageList" class="package-grid"></div>
+        </section>
+
+        <section class="callback">
+            <h2>Callback Function Demo</h2>
+
+            <button id="callbackButton">
+                Run Callback
+            </button>
+
+            <p id="callbackMessage">
+                Waiting for action...
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <h3>WanderGo Travels</h3>
+        <p>Explore the world, one journey at a time.</p>
+		<p>Made By JWAL PATEL</p>
+    </footer>
+
+</body>
+</html>
